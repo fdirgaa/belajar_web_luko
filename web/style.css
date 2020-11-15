@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+:root {
+  --primary-color: #2e52e8;
+  --bg1: #d7ddff;
+  --bg2: #fdf7eb;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--bg1);
+}
+
+.box {
+  width: 90%;
+  background-color: var(--bg2);
+  margin: 100px auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px 0px rgba(20, 54, 190, 0.3);
+}
+
+.container {
+  position: relative;
+  padding: 20px 50px;
+}
+
+/* Navbar Styling */
+
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  color: #111;
+}
+
+.navbar__left,
+.navbar__right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .navbar__logo a {
+  font-weight: 700;
+  color: var(--primary-color);
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+.navbar .navbar__menu li {
+  display: inline-block;
+  list-style: none;
+}
+
+.navbar .navbar__menu li a {
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.navbar .navbar__left li a:hover,
+.navbar .navbar__right li:first-child a:hover {
+  background-color: #ece1ca;
+}
+
+.navbar .navbar__right {
+  margin-left: auto;
+}
+
+.navbar__right .nav__button {
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 500;
+}
+
+.navbar__right .nav__button:hover {
+  background-color: #294cd6;
+}
+
+/* Content styling */
+.content {
+  margin-top: 100px;
+  width: 50%;
+}
+
+.content__details {
+  margin: 0 0 40px 0;
+}
+
+.content__details h2.detail__logline {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 45px;
+}
+
+.content__details .detail__desc {
+  margin-top: 30px;
+}
+
+.content__form .form__address {
+  padding: 10px 30px;
+  width: 60%;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid lightgray;
+}
+
+.content__form .form__address:focus {
+  border: 1px solid gray;
+}
+
+.content__form .form__getPrice {
+  padding: 10px 30px;
+  color: white;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+.content__form .form__getPrice:hover {
+  background-color: #294cd6;
+}
+
+.content__image {
+  width: 100%;
+  margin-top: -200px;
+}
+
+.reason {
+  background-color: var(--primary-color);
+  margin-top: -20px;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.reason__item {
+  margin: 0 50px;
+  text-align: center;
+  color: white;
+}
+
+.reason__item > .item__icon {
+  width: 64px;
+  margin-bottom: 20px;
+}
+
+.reason__item > .item__title {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.reason__item > .item__desc {
+  font-size: 11px;
+}
